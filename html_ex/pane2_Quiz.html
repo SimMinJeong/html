@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.div{border: 3px solid black; width:500px; margin:0 auto;}
+	.fix{overflow: auto;}
+	.header{border: 3px solid black; background-color:red;
+			height:120px;}
+	.nav{border:3px solid black; background-color:yellow;
+		float: left; width:70px; height:250px;}
+	.section{border: 3px solid black; background-color:green;
+			width: 300px; height: 250px; margin: 0 0 0 76px;}
+	.aside{border: 3px solid black; background-color:yellow;
+			float: right; width: 112px; height: 250px;  }
+	.footer{border: 3px solid black; background-color:pink;
+			height:110px;}
+	
+	#wrap{display:flex; flex-flow:column; text-align: center; margin:0 auto;}
+	
+	#wrap div:first-child{order:1; border:3px solid black; background: skyblue;
+							width: 270px; height: 35px; margin:15px 0 0 12px; }		
+	#wrap div:nth-child(2){order:2; border:3px solid black; background: #FFE146;
+							width: 270px; height: 35px; margin:15px 0 0 12px;}		
+	#wrap div:nth-child(3){order:3; border:3px solid black; background: #FFBC9B;
+							width: 270px; height: 35px; margin:15px 0 0 12px;}		
+			
+			
+</style> </head> <body>
+
+	<div class="div fix">
+		<header class="header"><h1 align="center">< header ></h1></header>
+		<nav class="nav"><h3 align="center"><b> nav </b></h3></nav>
+		<aside class="aside"><h3 align="center"> aside </h3></aside>
+		<section class="section"><h3 align="center"> section1 </h3>
+			<div id="wrap" text-align="center">
+				<div style="align-items: center;"><label>header</label></div>
+				<div><label>article</label></div>
+				<div><label>footer</label></div>
+			</div>
+		</section>
+		
+		<footer class="footer"><h3 align="center">< footer ></h3></footer>
+	</div>
+
+</body>
+</html>
